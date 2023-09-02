@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    margin-bottom: 10rem;
+    padding: 0;
+    /* overflow: hidden; */
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8f9fa;
+     color: royalblue;
+     border-radius: 4px;
+    cursor: pointer; 
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: royalblue;
+}
+
+/* hamburger */
+
+.hamburger {
+    display: none;
+    /* Initially hide the hamburger menu */
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+
+
+/* About Section */
+
+.bg-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.bg-img .name b {
+    color: red;
+}
+
+.bg-img .name h2 {
+    margin-top: -1rem;
+    width: 600px;
+    font-size: 5rem;
+    color: white;
+}
+
+.bg-img .name span {
+
+    max-width: 400px;
+    font-size: 2rem;
+    color: white;
+}
+
+.about {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about .profile img {
+    max-height: 300px;
+    border-radius: 200px;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(172, 39, 39, 0.7);
+    /* Adjust the color and size of the glow */
+    animation: glow 2s infinite alternate;
+    /* Adjust animation duration and timing as needed */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(240, 8, 8, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+    }
+}
+
+.about .about-text p {
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
+    max-width: 40rem;
+}
+
+.about .about-text h2 {
+    color: white;
+    padding-left: 2rem;
+    font-size: 2rem;
+    max-width: 40rem;
+}
+
+
+
+/* Click */
+.click {
+    display: flex;
+
+}
+
+button {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 16px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.example-text {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.example-text {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Box */
+.btn {
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: royalblue;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.section {
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+}
+
+.section h2 {
+    color: white;
+    font-size: 2rem;
+    max-width: 40rem;
+}
+
+.card {
+    border-radius: 10px;
+    width: 18rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid #ccc;
+    padding: 2rem;
+}
+
+.card i {
+    font-size: 2rem;
+
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+/* PRojects */
+.box1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact form */
+/* .section2 {
+    display: flex;
+    justify-content: flex-end;
+}
+ .links{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+   
+}
+
+.links i{
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: royalblue;
+
+}
+#contactForm {
+    border: none; 
+}
+
+.box2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input {
+    margin-top: 1rem;
+    width: 20vw;
+    height: 2.5vh;
+}
+
+.form-group textarea {
+    width: 20vw;
+    margin-top: 1rem;
+}
+
+#btn1 {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8f9fa;
+     color: royalblue;
+     border-radius: 4px;
+    cursor: pointer; 
+} */
+
+
+
+/* ---------------------Responsive for 600px-------- */
+
+/* hamburger */
+@media screen and (max-width: 600px) {
+
+    .nav-links {
+        display: none;
+        /* Hide the navigation links */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Show the navigation links when active */
+    }
+
+    .hamburger {
+        display: block;
+        /* Show the hamburger menu */
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+/* Main */
+
+    .name h2 {
+        display: none;
+    }
+
+    .name span {
+        display: none;
+    }
+
+/* About Section */
+
+    .about {
+        flex-wrap: wrap;
+    }
+    .about .about-text p {
+       
+        font-size: 1rem;
+        
+        margin-right: 5rem;
+    }
+   
+    
+/* Box */
+
+    .box {
+        margin-top: -3rem;
+        flex-wrap: wrap;
+        margin-left: -15rem;
+    }
+
+    .box1 {
+        margin-top: -3rem;
+        flex-wrap: wrap;
+        margin-left: -15rem;
+
+    }
+
+
+    .section h2 {
+        margin-left: -19rem;
+    }
+
+/* Contact Form */
+    .form-group input {
+        margin-top: 1rem;
+        width: 70vw;
+    }
+    .box2 {
+        margin-top: -2rem;
+        /* margin-left: -1rem; */
+    }
+
+    .form-group textarea {
+        width: 70vw;
+        margin-top: 1rem;
+
+    }
+
+    form {
+        margin-left: -19rem;
+    }
+
+    .links {
+       margin-left: -19rem;
+    
+    }
+
+}
+
+/* hamburger */
+@media screen and (max-width: 601px) {
+
+    .nav-links {
+        display: none;
+        /* Hide the navigation links */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Show the navigation links when active */
+    }
+
+    .hamburger {
+        display: block;
+        /* Show the hamburger menu */
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+/* Main */
+
+    .name h2 {
+        display: none;
+    }
+
+    .name span {
+        display: none;
+    }
+
+/* About Section */
+
+    .about {
+        flex-wrap: wrap;
+    }
+    .about .about-text p {
+       
+        font-size: 1rem;
+        
+        margin-right: 5rem;
+    }
+   
+    
+/* Box */
+
+    .box {
+        margin-top: -3rem;
+        flex-wrap: wrap;
+        margin-left: -15rem;
+    }
+
+    .box1 {
+        margin-top: -3rem;
+        flex-wrap: wrap;
+        margin-left: -15rem;
+
+    }
+
+
+    .section h2 {
+        margin-left: -19rem;
+    }
+
+/* Contact Form */
+    .form-group input {
+        margin-top: 1rem;
+        width: 70vw;
+    }
+    .box2 {
+        margin-top: -2rem;
+        /* margin-left: -1rem; */
+    }
+
+    .form-group textarea {
+        width: 70vw;
+        margin-top: 1rem;
+
+    }
+
+    form {
+        margin-left: -19rem;
+    }
+
+    .links {
+       margin-left: -19rem;
+    
+    }
+
+}
